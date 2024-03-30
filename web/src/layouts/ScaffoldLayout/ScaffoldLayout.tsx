@@ -17,11 +17,11 @@ const ScaffoldLayout = ({
   children,
 }: LayoutProps) => {
   return (
-    <div className="rw-scaffold">
+    <div className="rw-scaffold bg-gray-700 text-gray-50 min-h-dvh">
       <Toaster toastOptions={{ className: 'rw-toast', duration: 6000 }} />
       <header className="rw-header">
-        <h1 className="rw-heading rw-heading-primary">
-          <Link to={routes[titleTo]()} className="rw-link">
+        <h1 className="rw-heading rw-heading-primary text-gray-50">
+          <Link to={routes[titleTo]()} className="rw-link text-gray-50">
             {title}
           </Link>
         </h1>
